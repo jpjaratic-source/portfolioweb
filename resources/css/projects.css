@@ -1,0 +1,230 @@
+/* setup */
+*{  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* fonts (svatopluk)*/
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Light.otf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Regular.otf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Medium.otf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-SemiBold.otf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Bold.otf");
+    font-weight: 700;
+}
+@font-face{ /*black*/
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Black.otf");
+    font-weight: 900;
+}
+
+main {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: "svatopluk", sans-serif;
+} 
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em 0 10em;
+}
+nav .nav-logo ul{
+    margin: 0;
+    padding: 0;
+}
+nav .nav-links{
+    display: flex;
+    list-style: none;
+    font-size: 1.3em;
+    gap: 20px;
+}
+nav ul li a{
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding: 40px 40px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
+nav img {
+    width: 100%;
+}
+
+
+.header{
+    display: grid;
+    margin: 3em 0 3em 0; 
+    justify-content: center;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    font-weight: 700;
+}
+.header h1 p{
+    color: white;
+    background-color: black;
+}
+.header h3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+}
+
+.project-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.project{
+    box-sizing: border-box;
+}
+
+.project-image{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.project-image img{
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project h2{
+    font-size: 3em;
+}
+.project3 img{
+    height: 640px;
+    object-position: top;
+}
+
+.project4 img{
+    height: 500px;
+    object-position: 0 23%;
+}
+
+.ongoing{
+    border: 3px solid black;
+    justify-content: center;
+    background: white;
+}
+.ongoing h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding: 10px 0 10px 0;
+}
+.ongoing .projects{
+    padding: 1em;
+    display: grid;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.ongoing hr{
+    border: 2px solid black;
+}
+
+.archives{
+    margin-bottom: 3em;
+}
+.archives hr{
+    border: 2px solid black;
+    margin: 3em 0 3em 0;
+}
+.archives .header h1{
+    justify-content: center;
+    font-size: 4em;
+}
+
+.archives .past-projects{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #013D5A;
+    color: white;
+    padding: 50px 160px 20px 160px; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px; 
+}
+
+.footer-left img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1em;
+    padding-top: 20px;
+}
+footer ul li {
+    margin-top: 1.5em;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+

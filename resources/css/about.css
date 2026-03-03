@@ -1,0 +1,260 @@
+/* setup */
+*{  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* fonts (svatopluk)*/
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Light.otf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Regular.otf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Medium.otf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-SemiBold.otf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Bold.otf");
+    font-weight: 700;
+}
+@font-face{ /*black*/
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Black.otf");
+    font-weight: 900;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: "svatopluk", sans-serif;
+    margin: 0px;
+}
+
+main{
+    width: min(1650px, 100%);
+    margin: 5% auto;
+    padding: 0 2%;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em 0 10em;
+}
+nav .nav-logo ul{
+    margin: 0;
+    padding: 0;
+}
+nav .nav-links{
+    display: flex;
+    list-style: none;
+    font-size: 1.3em;
+    gap: 20px;
+}
+nav ul li a{
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding: 40px 40px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
+nav img {
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.column1 h1{
+    font-size: 5em;
+    margin-bottom: 1em;
+}
+
+.column1 strong{
+    background-color: black;
+    color: white;
+}
+.column1 .self-picture {
+    display: flex;
+    border: 3px solid black;
+    overflow: hidden;
+    width: 35em;
+    height: 88%;
+    align-items: center;
+    position: relative;
+}
+
+.column1 .self-picture .self-portrait {
+    transform: scaleX(-1);
+    margin-top: 5em;
+    margin-left: -12em;
+    height: 100%;
+    width: auto;
+}
+
+.column1 .self-picture .logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    background-color: black;
+    padding: 1em;
+}
+
+.column1 .self-picture .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.column2{
+    display: flex;
+    height: 5em;
+    margin: 43em -40em 0 -40em;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    align-items: center;
+}
+.column2 h1{
+    font-size: 6.5em;
+}
+.column2 img{
+    height: 5em;
+    margin-right: 3em;
+}
+
+.column3{
+    width: 75%;
+    font-size: 1.5em;
+}
+.column3 .portfolio .title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.column3 .portfolio .title hr{
+    width: 100%; 
+    margin-left: 1em; 
+    margin-top: 1em;
+    border: 2px solid black;
+}
+.column3 .self-intro .about{
+    margin-bottom: 2em;
+}
+
+.column3 .portfolio{
+    margin-top: 2em;
+}
+
+.column3 .portfolio .details{
+    max-width: auto;
+}
+.column3 .skills .details{
+    max-width: 600px;
+}
+.column3 .details .title{
+    justify-content: space-between;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    align-items: center;          
+    justify-content: center;
+    padding: 0 0 3rem 0;
+    gap: 4rem;                    
+}
+.contact .digicam,
+.contact .guitar {
+    width: 70%;                 
+    height: auto;
+    object-fit: contain;
+}
+.contact .digicam{
+    transform: rotate(-15deg);
+}
+.contact .guitar{
+    transform: rotate(15deg);
+    margin-top: -5em;
+    cursor: pointer;
+}
+.contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+}
+.contact h1 {
+    font-size: 5em;
+}
+.contact h2 {
+    font-size: 2.5em;
+}
+.contact h4 {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #013D5A;
+    color: white;
+    padding: 50px 160px 20px 160px; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px; 
+}
+
+.footer-left img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1em;
+    padding-top: 20px;
+}
+footer ul li {
+    margin-top: 1.5em;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeremypoh - Contacts</title>
+    <link rel="stylesheet" href="resources/css/contact.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="resources/images/logo/darklogo.png" alt="jeremypoh Logo">
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class = "ticker-bg">
+        <h1>AVAILABLE TO</h1>
+        <div class="ticker-track">
+            <div class="ticker-group">
+                CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT •  CONTACT •  CONTACT •  CONTACT •
+            </div>
+            <div class="ticker-group">
+                CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT •  CONTACT •  CONTACT •  CONTACT •
+            </div>
+        </div>
+    </div>
+
+
+    <header class = "main-header">
+        <h1>Contact <strong>Me</strong></h1>
+        <h2>Connecting in the digital age</h2>
+    </header>
+
+    <main>
+        <div class = "container">
+            <div class = "contact-info">
+                <div class = "info email">
+                    <header>
+                        <h1>Email:</h1>
+                        <img src="resources/images/contact/envelope.png" alt="">
+                    </header>
+                    <h1>jeremello@proton.me</h1>
+                    <h3>Isn't that what everyone uses nowadays?</h3>
+                </div>
+
+                <div class = "info instagram">
+                    <header>
+                        <h1>Instagram:</h1>
+                        <a href="https://www.instagram.com/jeremelloo/" target = "_blank">
+                            <img src="resources/images/contact/polaroid.png" alt="My Instagram page">
+                        </a>
+                    </header>
+                    <h1>@jeremello</h1>
+                    <h3>Or maybe not, we're in the new age of technlogy</h3>
+                </div>
+
+                <div class = "info phone">
+                    <header>
+                        <h1>Phone:</h1>
+                        <img src="resources/images/contact/phone.png" alt="">
+                    </header>
+                    <h1>(+65) 8752 2183</h1>
+                    <h3>May respond swiftly</h3>
+                </div>
+            </div>
+
+            <div class = "input-field">
+                <h1>Write directly to me</h1>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method = "POST">
+                    <input type = "text" name = "name" placeholder = "Name" required>
+                    <input type = "email" name = "email" placeholder = "Email" required>
+                    <input type = "text" name = "subject" placeholder = "Subject">
+                    <textarea name = "message" placeholder="Message" required></textarea>
+
+                    <input type = "file" id = "real-file" hidden multiple>
+    
+                    <div class="buttons">
+                        <button type = "button" class = "add-files" onclick = "document.getElementById('real-file').click();">Add Files</button>
+                        <button type = "submit" class = "submit">Send Email</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html">
+                    <img src="resources/images/logo/darklogo.png" alt="jeremypoh Logo">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <ul>
+                    <h4>Navigation</h4>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+
+                <ul>
+                    <h4>Contact Information</h4>
+                    <li>jeremello@proton.me</li>
+                    <li>@jeremelloo</li>
+                    <li>(+65) 8752 2183</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 jeremypoh.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

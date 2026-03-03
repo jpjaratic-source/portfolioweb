@@ -1,0 +1,321 @@
+/* setup */
+*{  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* fonts (svatopluk)*/
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Light.otf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Regular.otf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Medium.otf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-SemiBold.otf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Bold.otf");
+    font-weight: 700;
+}
+@font-face{ /*black*/
+    font-family: "svatopluk";
+    src: url("../fonts/Svatopluk-Black.otf");
+    font-weight: 900;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+
+    max-width: 1650px;
+    margin: 8em auto 2em auto; 
+    padding: 0 16px; 
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: "svatopluk", sans-serif;
+} 
+
+
+/* navigation bar */
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em 0 10em;
+}
+nav .nav-logo ul{
+    margin: 0;
+    padding: 0;
+}
+nav .nav-links{
+    display: flex;
+    list-style: none;
+    font-size: 1.3em;
+    gap: 20px;
+}
+nav ul li a{
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding: 40px 40px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
+nav img {
+    width: 100%;
+}
+
+.ticker-bg{
+    margin-top: 1%;
+    padding: 1% 0 1% 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.ticker-bg h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker-group {
+    display: flex;
+    white-space: nowrap;
+    font-size: 2em;
+    font-weight: 600;
+    padding-right: 0.5rem;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.main-header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    
+}
+.main-header h1, strong{
+    display: flex;
+    font-weight: 700;
+    padding: 0 10px 0 10px;
+    font-size: 70px;
+    justify-content: center;
+}
+.main-header h2{
+    font-size: 35px;
+}
+.main-header strong{
+    background-color: black;
+    color: white;
+}
+.container {
+    display: grid;
+    width: 100%;
+    gap: 15rem; 
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10em;
+    align-items: center; 
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: -2em;
+    gap: 7rem;
+
+}
+.contact-info .email, .contact-info .phone {
+    text-align: left; 
+}
+.contact-info .instagram{
+    text-align: right;
+}
+
+.contact-info h1 {
+    font-size: 2.7rem;
+}
+.contact-info h3{
+    font-size: 1.4em;
+}
+
+.contact-info .email {
+    position: relative; 
+}
+.contact-info .email img {
+    position: absolute;
+    width: 40%; 
+    top: -5em;
+    right: 12em;
+    z-index: -1;
+}
+
+.contact-info .instagram {
+    position: relative; 
+    cursor: pointer;
+}
+.contact-info .instagram img {
+    position: absolute;
+    width: 35%; 
+    top: -4em;
+    right: 25em;
+    z-index: -1;
+}
+
+.contact-info .phone{
+    position: relative; 
+}
+.contact-info .phone img{
+    position: absolute;
+    width: 25%; 
+    top: -6em;
+    right: 14em;
+    z-index: -1;
+}
+
+
+.input-field{
+    width: 100%;
+}
+.input-field h1{
+    margin-bottom: 0.5em;
+}
+/* input fields*/
+.input-field form{
+    display: grid;
+    gap: 1.2em;
+}
+.container input, .container textarea{
+    border: 3px solid black;
+    background: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: large;
+    padding: 1em;
+
+}
+.container textarea{
+    height: 20rem;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em; 
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: inherit;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 14em;
+    height: 3em;
+}
+.add-files {
+    border: 2px solid orange;
+    color: orange;
+    background-color: transparent;
+}
+.add-files:active{
+    background-color: rgb(255, 204, 94);
+    border: rgb(255, 204, 94);
+    color: white;
+}
+.submit {
+    border: 2px orange;
+    background-color: orange;
+    color: white;
+}
+.submit:hover{
+    background-color: rgb(255, 204, 94);
+    border: rgb(255, 204, 94);
+    color: white;
+}
+.submit:active{
+    background-color: transparent;
+    border: 2px solid rgb(254, 204, 94);
+    color: rgb(254, 204, 94);
+}
+
+
+footer {
+    background-color: #013D5A;
+    color: white;
+    padding: 50px 160px 20px 160px; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px; 
+}
+
+.footer-left img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1em;
+    padding-top: 20px;
+}
+footer ul li {
+    margin-top: 1.5em;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
